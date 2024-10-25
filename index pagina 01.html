@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas Maravillosas</title>
+</head>
+<body>
+    <h1>Las Maravillas de las Matemáticas</h1>
+    <p>
+        Las matemáticas son una disciplina fascinante que abarca desde conceptos básicos de aritmética hasta teorías complejas en cálculo y álgebra.
+        A través de la historia, las matemáticas han sido la base para numerosos avances científicos y tecnológicos.
+    </p>
+    <h2>Áreas de las Matemáticas</h2>
+    <ul>
+        <li>Álgebra</li>
+        <li>Geometría</li>
+        <li>Cálculo</li>
+        <li>Estadística</li>
+    </ul>
+    <h3>Ejemplo de un gráfico matemático:</h3>
+    <img src="https://www.example.com/tu-imagen.jpg" alt="Gráfico Matemático">
+    <p>
+        Este gráfico representa una función parabólica, un concepto fundamental en el estudio del álgebra.
+    </p>
+    <button onclick="generarEjercicio()">Generar Ejercicio de Matemáticas</button>
+    <p id="ejercicio"></p>
+
+    <script>
+        function generarEjercicio() {
+            const ejercicios = [
+                "Resuelve la ecuación: 2x + 3 = 7",
+                "Calcula la derivada de f(x) = x^2 + 2x + 1",
+                "Encuentra el área de un triángulo con base 5 y altura 3",
+                "Convierte 45 grados a radianes",
+                "Resuelve la integral: ∫(3x^2 + 2x + 1) dx"
+            ];
+            const ejercicio = ejercicios[Math.floor(Math.random() * ejercicios.length)];
+            document.getElementById("ejercicio").innerText = ejercicio;
+        }
+    </script>
+</body>
+</html>
